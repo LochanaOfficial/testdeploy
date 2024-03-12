@@ -8,7 +8,7 @@ interface DashboardPageProps {
 
 const DashboardPage = ({currentUser}: DashboardPageProps) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col justify-center items-center w-full h-full">
         <div>{currentUser?.email}</div>
         <div>{currentUser?.name}</div>
     </div>
