@@ -31,6 +31,7 @@ const RegisterModal = () => {
     }, [registerModal, loginModal]);
 
     const {
+        reset,
         register,
         handleSubmit,
         formState: {
@@ -54,6 +55,7 @@ const RegisterModal = () => {
                 toast.success("Succesfully Registered");
                 registerModal.onClose();
                 loginModal.onOpen();
+                reset();
             })
             .catch((error) => {
                 toast.dismiss();
