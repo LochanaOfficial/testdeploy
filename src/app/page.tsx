@@ -12,7 +12,7 @@ export default function Home() {
         Welocome To Novera
       </div>
       <Button onClick={() => router.push("/dashboard")} variant="outline" className="w-72 h-12 border-2 border-white hover:bg-white hover:text-black hover:font-bold">
-        Dashboard
+        Dashboard Panal
       </Button>
     </div>
   );
